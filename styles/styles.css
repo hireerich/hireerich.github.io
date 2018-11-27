@@ -1,0 +1,54 @@
+@charset "utf8";
+
+/*
+	Website: Portfolio: Erich Gennette
+	Author: Erich Gennette
+	Date: November 26, 2018
+	Filename: styles.css
+*/
+
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body > .block1 {
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	min-width: 100%;
+}
+
+.topParallax {
+	background-image: url("../images/background.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height: 90vh;
+}
+
+.navBlock {
+	padding-top: 75px;
+}
+
+.nav {
+	padding-top: 20px;
+}
+
+.link a, .link a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.link, .navSeparator {
+	display: inline-block;
+	padding-right: 5px;
+}
+
+.container, .row {
+	min-width:100vw !important;
+	padding: 0px !important;
+	margin: 0px !important;
+}
