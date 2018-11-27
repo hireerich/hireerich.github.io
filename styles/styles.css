@@ -26,6 +26,8 @@ body > .block1 {
 
 img {
 	width: 95%;
+	margin-bottom: 25px;
+	margin-top: 25px;
 }
 
 .secondNav {
@@ -76,6 +78,10 @@ img {
 }
 
 .bar {
-	height: 5px;
+	height: 3px;
 	background-color: black;
+}
+
+.seeMore {
+	text-align: center;
 }

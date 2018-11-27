@@ -3,8 +3,9 @@
     "",
     "\\images",
     "\\Pages",
+    "\\scripts",
     "\\styles"
   ],
-  "SelectedNode": "\\styles\\index.css",
+  "SelectedNode": "\\scripts\\script.js",
   "PreviewInSolutionExplorer": false
 }
