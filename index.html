@@ -16,6 +16,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="jquery.localscroll.js" type="text/javascript"></script>
+		<script src="jquery.scrollTo.js" type="text/javascript"></script>
+		<script src="scripts/script.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 		<style>
 			.topParallax {
@@ -41,9 +44,15 @@
 						<li class="navSeparator">|</li>
 						<li class="link"><a href="Files/Resume.pdf">Resume</a></li>
 						<li class="navSeparator">|</li>
-						<li class="link"><a href="#contactRow">Contact Me</a></li>
+						<li class="link"><a href="#contactRow" class="contactNav">Contact Me</a></li>
 					</ul>
 				</div>
+			</div>
+		</div>
+		<div class="col-12 bar"></div>
+		<div class="container contactBanner">
+			<div class="row" id="thirdRow">
+				<h1 class="col-12 titleHeader">Contact Info</h1>
 			</div>
 		</div>
 		<div class="col-12 bar"></div>
@@ -51,7 +60,6 @@
 			<div class="row" id="thirdRow">
 				<div class="col-3"></div>
 				<div class="col-6" id="contactInfo">
-					<h1 class="titleHeader">Contact Info</h1>
 					<p>Please get in touch with me about an employment opportunity, I would be thrilled to discuss it with you.
 					</br>Reach me by email at: <strong>e.gennette@hotmail.com</strong>, or call/text my cell phone at: 
 					<strong>1-902-308-9659</strong>. I'm also on <strong>LinkedIn</strong> if you would prefer to connect with me there.

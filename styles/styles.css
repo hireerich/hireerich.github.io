@@ -49,6 +49,15 @@ img {
 	min-height: 100vh;
 }
 
+.contactParallax {
+	background-image: url("../images/background.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	min-height: 50vh;
+}
+
 #chevron {
 	width: 100vw;
 	position:absolute;
@@ -101,8 +110,8 @@ img {
 	text-align: center;
 }
 
-#contactRow .titleHeader {
-	text-align: center;
+#contactRow p {
+	padding-top: 5%;
 }
 
 .contentRow1 {
@@ -111,4 +120,15 @@ img {
 
 .contentRow2 {
 	background-color: lightgrey;
+}
+
+.contactBanner {
+	height: 20vh;
+	background-image: url("../images/tweed.png");
+}
+
+.contactBanner .titleHeader {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	text-align: center;
 }

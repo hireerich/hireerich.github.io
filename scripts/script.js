@@ -1,10 +1,8 @@
-/*$(document).scroll(function() {
-		$('.bottomMenu').each(function(i) {
-			var bottom_of_object = $(this).position().top + $(this).outerHeight();
-			var bottom_of_window = $(window).scrollTop() + $(window).height();
-			if(bottom_of_window > bottom_of_object) {
-				$(this).animate({'opacity' : '1'}, 500);
-			}
-		});
+$(document).ready(function() {
+	$(".contactNav").click(function (e) {
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: $("#contactRow").offset().top
+		}, 'slow');
 	});
-});*/
+});
