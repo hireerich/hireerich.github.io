@@ -100,3 +100,15 @@ img {
 .seeMore {
 	text-align: center;
 }
+
+#contactRow .titleHeader {
+	text-align: center;
+}
+
+.contentRow1 {
+	background-image: url("../images/dust_scratches.png");
+}
+
+.contentRow2 {
+	background-color: lightgrey;
+}
