@@ -132,3 +132,21 @@ img {
 	padding-bottom: 45px;
 	text-align: center;
 }
+
+.imgDiv {
+	text-align: center;
+}
+
+.imgDiv img {
+	max-height: 65vh;
+	max-width: 40vw;
+	width: auto;
+}
+
+#nsccDiv {
+	height: 45vh;
+}
+
+#nsccDiv img {
+	padding-top: 12%;
+}
