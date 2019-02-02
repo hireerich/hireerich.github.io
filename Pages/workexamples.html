@@ -3,21 +3,23 @@
 <html>
 <!--
 	Website: Portfolio: Erich Gennette
-	Webpage: Home
+	Webpage: Work Examples
 	Author: Erich Gennette
-	Date: December 5, 2017
-	Filename: egp_home.html
+	Date: January 29, 2018
+	Filename: workexamples.html
 /-->
 	<head>
 		<title>Erich's Portfolio</title>
 		<meta charset = "utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="../styles/styles.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link href="../styles/rules.css" rel="stylesheet">
+		<link href="../styles/workstyles.css" rel="stylesheet">
 		<script src="../scripts/script.js"></script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 		<style>
 			img {
 				border: 2px solid grey;
@@ -30,9 +32,9 @@
 			<div class="row">
 				<div class="col-8"></div>
 				<div class="navBlock col-4">
-				<header id = "home">
-					<h1>Work Examples</h1>
-				</header>
+					<header id = "home">
+						<h1>Work Examples</h1>
+					</header>
 					<ul class="nav">
 						<li class="link"><a href="education.html">Education</a></li>
 						<li class="navSeparator">|</li>
@@ -47,127 +49,249 @@
 				<div class="col-12 bar"></div>
 			</div>
 		</div>
-		<div class="container secondNav">
-			<div class="row">
-				<div class="col-12">
-					<h1><a href=#top>Back to top</a></h1>
+		<div class="contentRow1" id="workGalleryRow1">
+			<div id="javaCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="container">
+							<div class="row">
+								<div class="col-2"></div>
+								<div class="col-4">
+									<div class="descr">
+										<h1 class="titleHeader">Java: Pong Game</h1>
+										<p>During the second semester of my first year at COGS, I was given an assignment to create a 'Pong Game'.
+										This game would have a ball which is hit back and forth by paddles, with a count of how many times the ball hit
+										a paddle without going out of bounds.
+										</br></br>
+										The Project required the game to have a menu to select 'Play Game', and also to view previously acheived 'High Scores'
+										which were to be saved to the system and retreived when needed. Once I had written the code for the base game I decided
+										to design the game with inspiration from the classic game 'Pong' which used a simple white on black theme.</p>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="imgDiv">
+										<img alt="Pong Game Gif" src="../images/pong.gif">
+									</div>
+								</div>
+								<div class="col-2"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<div class="row">
+								<div class="col-2"></div>
+								<div class="col-4">
+									<div class="descr">
+										<h1 class="titleHeader">Java: Vehicles Project</h1>
+
+										<p>In my Advanced OOP course I was tasked with creating a class heirarchy of vehicles. This would have a base class
+										containing all similar attributes between vehicle types. Then new types of vehicles would be created with unique controls
+										depending on their type.
+										</br></br>
+										This Project was built on throughout the entire course, each assignment adding a new feature to the Project.
+										The vehicles collide with eachother, are able to be controlled, can be added and removed, are saved to a database when
+										the program is closed and retreived when it is opened and run on a server so that multiple clients may add and remove vehicles.</p>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="imgDiv">
+										<img alt="Vehicles Project Gif" src="../images/vehicles.gif">
+									</div>
+								</div>
+								<div class="col-2"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#javaCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#javaCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<div class="contentRow2" id="workGalleryRow2">
+			<div id="WebCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="container">
+							<div class="row">
+								<div class="col-2"></div>
+								<div class="col-4">
+									<div class="imgDiv">
+										<img alt="Profile Page of Web Project" src="../images/capstone.PNG">
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="descr">
+										<h1 class="titleHeader">Web Capstone Project</h1>
+										<p>This is an ongoing project that myself and four of my classmates are working on together for our Capstone course. The project is to create a web based
+										application that aims to help people with obscure hobbies connect with people who share those hobbies with them.
+										</br></br>
+										The application has three main pages. A page for the user to maintain their own profile, a page for users to discover other users who share their preferred hobbies, 
+										and a page for users to message eachother and socialize. The project combines most of what I have learned during my course at NSCC together to create a working 
+										application.</p>
+									</div>
+								</div>
+								<div class="col-2"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<div class="row">
+								<div class="col-2"></div>
+								<div class="col-4">
+									<div class="imgDiv">
+										<img alt="Matchstick Game Screenshot" src="../images/matchGame.PNG">
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="descr">
+										<h1 class="titleHeader">JS: Matchstick Game</h1>
+										<p>This is a project from my Web Application Programming course. Here I was tasked with creating a game of matchsticks
+										with selectable matches and two players. This was to be done using JavaScript.
+										</br></br>
+										The sticks were to be arranged in a pyramid and start with transparent background. Then upon being selected have a red
+										background. Then once the player completed their move, the selected matches would have a grey background and be
+										unable to be selected for the remainder of the game.</p>
+									</div>
+								</div>
+								<div class="col-2"></div>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#WebCarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#WebCarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="container contentRow1" id="workGalleryRow1">
-			<div class="row" id="firstRow">
-				<div class="col-6 descr">
-					<h1 class="titleHeader">Java: Pong Game</h1>
-
-					<p>During the second semester of my first year at COGS, I was given an assignment to create a 'Pong Game'.
-					This game would have a ball which is hit back and forth by paddles, with a count of how many times the ball hit
-					a paddle without going out of bounds.
-					</br></br>
-					The Project required the game to have a menu to select 'Play Game', and also to view previously acheived 'High Scores'
-					which were to be saved to the system and retreived when needed. Once I had written the code for the base game I decided
-					to design the game with inspiration from the classic game 'Pong' which used a simple white on black theme.</p>
-
-					<p class="seeMore"><a href="">See more Java Projects</a></p>
+		<div class="contentRow1" id="workGalleryRow3">
+			<div id="CPPCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="container">
+							<div class="row">
+								<div class="col-2"></div>
+								<div class="col-4">
+									<div class="descr">
+										<h1 class="titleHeader">C++ Floyd Warshall Project</h1>
+										<p>During my data structures course in my last semester at NSCC, I was given a project to create a program that could read data from a text file containing 
+										distances between two cities and then parse it into maps and sets. These maps and sets would then be used to create tables that displayed these distances.
+										</br></br>
+										I was to then implement the Floyd Warshall Algorythm to link together cities that otherwise are not directly connected to one another. This essentially 
+										creates paths to each city from each city and gives a distance value for each trip. This was also to be output in a table. Finally, the program needed 
+										to accept two cities from the end user so the program could then use the data from using the Floyd Warshall Algorythm to show the end user every city 
+										they have to pass through to get to their desired destination.</p>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="imgDiv">
+										<img alt="Screenshot of FW Project in use" src="../images/floydWarshall.PNG">
+									</div>
+								</div>
+								<div class="col-2"></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container">
+							<div class="row">
+								<div class="col-2"></div>
+								<div class="col-4">
+									<div class="descr">
+										<h1 class="titleHeader">C++ Appointment Book</h1>
+										<p>The Appointment Book was a project I built on throughout my course in C++. It uses Object Oriented practices to have 
+										multiple types of appointments. The appointments are all stored together in a planner and can be accessed by searching for appointments
+										on a particular date.</br></br>
+										The output of this program is just console output, however I formatted it in a way that makes the output look as if it is a table of
+										appointments. These appointments are built using the input that is prompted from the user. Currently, the program only saves the appointments
+										in RAM.</p>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="imgDiv">
+										<img alt="Screenshot of Appointment Book in use" src="../images/appointmentBook.PNG">
+									</div>
+								</div>
+								<div class="col-2"></div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-6 imgDiv">
-					<img alt="Pong Game Gif" src="../images/pong.gif">
-				</div>
+				<a class="carousel-control-prev" href="#CPPCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#CPPCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 		</div>
-		<div class="container contentRow2" id="workGalleryRow2">
-			<div class="row" id="secondRow">
-				<div class="col-6 imgDiv">
-					<img alt="Vehicles Project Gif" src="../images/vehicles.gif">
+		<div class="contentRow2" id="workGalleryRow4">
+			<div id="MobiCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row">
+							<div class="col-2"></div>
+							<div class="col-4">
+								<div class="imgDiv" id="androidGif">
+									<img alt="GIF of the quick time event simulator" src="../images/quicktime.gif">
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="descr">
+									<h1 class="titleHeader">Android Quick Time Event</h1>
+									<p>This was one of the three final projects I did for my course in Mobile Application Development. The base task was to use an 
+									AsyncTask to do a process in the background and display it with a progress bar. I took some inspiration from modern games which use 
+									quick time events and created an app where the user must race the AsyncTask to deplete their own progress bar onscreen.</br></br>
+									During this project I also learned how to make my own custom shapes to use for buttons and other screen widgets. However, this project 
+									also allowed me to understand why the AsyncTask is used and also how it can be used.</p>
+								</div>
+							</div>
+							<div class="col-2"></div>
+						</div>
+					</div>
 				</div>
-				<div class="col-6 descr">
-					<h1 class="titleHeader">Java: Vehicles Project</h1>
-
-					<p>In my Advanced OOP course I was tasked with creating a class heirarchy of vehicles. This would have a base class
-					containing all similar attributes between vehicle types. Then new types of vehicles would be created with unique controls
-					depending on their type.
-					</br></br>
-					This Project was built on throughout the entire course, each assignment adding a new feature to the Project.
-					The vehicles collide with eachother, are able to be controlled, can be added and removed, are saved to a database when
-					the program is closed and retreived when it is opened and run on a server so that multiple clients may add and remove vehicles.</p>
-					
-					<p class="seeMore"><a href="">See more Java Projects</a></p>
-				</div>
-			</div>
-		</div>
-		<div class="container contentRow1" id="workGalleryRow3">
-			<div class="row" id="thirdRow">
-				<div class="col-6 descr">
-					<h1 class="titleHeader">JS: Matchstick Game</h1>
-
-					<p>This is a project from my Web Application Programming course. Here I was tasked with creating a game of matchsticks
-					with selectable matches and two players. This was to be done using JavaScript.
-					</br></br>
-					The sticks were to be arranged in a pyramid and start with transparent background. Then upon being selected have a red
-					background. Then once the player completed their move, the selected matches would have a grey background and be
-					unable to be selected for the remainder of the game.</p>
-
-					<p class="seeMore"><a href="">See more Web Projects</a></p>
-				</div>
-				<div class="col-6 imgDiv">
-					<img alt="Matchstick Game Screenshot" src="../images/matchGame.PNG">
-				</div>
-			</div>
-		</div>
-		<div class="container contentRow2" id="workGalleryRow4">
-			<div class="row" id="thirdRow">
-				<div class="col-6 imgDiv">
-					<img alt="Screenshot of Appointment Book in use" src="../images/appointmentBook.PNG">
-				</div>
-				<div class="col-6 descr">
-					<h1 class="titleHeader">C++ Appointment Book</h1>
-
-					<p>The Appointment Book was a project I built on throughout my course in C++. It uses Object Oriented practices to have 
-					multiple types of appointments. The appointments are all stored together in a planner and can be accessed by searching for appointments
-					on a particular date.</br></br>
-					The output of this program is just console output, however I formatted it in a way that makes the output look as if it is a table of
-					appointments. These appointments are built using the input that is prompted from the user. Currently, the program only saves the appointments
-					in RAM.</p>
-
-					<p class="seeMore"><a href="">See more C/C++ Projects</a></p>
-				</div>
-			</div>
-		</div>
-		<div class="container contentRow1" id="workGalleryRow4">
-			<div class="row" id="thirdRow">
-				<div class="col-6 descr">
-					<h1 class="titleHeader">Android Quick Time Event</h1>
-
-					<p>This was one of the three final projects I did for my course in Mobile Application Development. The base task was to use an 
-					AsyncTask to do a process in the background and display it with a progress bar. I took some inspiration from modern games which use 
-					quick time events and created an app where the user must race the AsyncTask to deplete their own progress bar onscreen.</br></br>
-					During this project I also learned how to make my own custom shapes to use for buttons and other screen widgets. However, this project 
-					also allowed me to understand why the AsyncTask is used and also how it can be used.</p>
-
-					<p class="seeMore"><a href="">See more Android Projects</a></p>
-				</div>
-				<div class="col-6 imgDiv" id="androidGif">
-					<img alt="GIF of the quick time event simulator" src="../images/quicktime.gif">
-				</div>
+				<a class="carousel-control-prev" href="#MobiCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#MobiCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 		</div>
 		<div class="col-12 bar"></div>
 		<div class="contactParallax"></div>
 		<div class="col-12 bar"></div>
 		<div class="container contactBanner">
-			<div class="row" id="thirdRow">
+			<div class="row">
 				<h1 class="col-12 titleHeader">Contact Info</h1>
 			</div>
 		</div>
 		<div class="col-12 bar"></div>
 		<div class="container contentRow1" id="contactRow">
-			<div class="row" id="thirdRow">
-				<div class="col-3"></div>
-				<div class="col-6" id="contactInfo">
-					<p>Please get in touch with me about an employment opportunity, I would be thrilled to discuss it with you.
-					</br>Reach me by email at: <strong>e.gennette@hotmail.com</strong>, or call/text my cell phone at: 
-					<strong>1-902-308-9659</strong>.</br> I'm also on <strong>LinkedIn</strong> if you would prefer to connect with me there.
+			<div class="row">
+				<div class="col-4"></div>
+				<div class="col-4" id="contactInfo">
+					<p>Please get in touch with me about an employment opportunity, I would be thrilled to discuss it with you. 
+					Reach me by email at: <strong>e.gennette@hotmail.com</strong>, or call/text my cell phone at: 
+					<strong>1-902-308-9659</strong>. I'm also on <strong>LinkedIn</strong> if you would prefer to connect with me there.
 				</div>
-				<div class="col-3"></div>
+				<div class="col-4"></div>
 				</div>
 			</div>
 		</div>

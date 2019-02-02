@@ -1,12 +1,11 @@
-@charset "utf8";
+﻿@charset "utf8";
 
 /*
 	Website: Portfolio: Erich Gennette
 	Author: Erich Gennette
 	Date: November 26, 2018
-	Filename: styles.css
+	Filename: rules.css
 */
-
 
 html {
 	font-family: 'Open Sans', sans-serif;
@@ -24,20 +23,41 @@ body > .block1 {
 	min-width: 100%;
 }
 
-img {
-	width: 95%;
-	margin-bottom: 25px;
-	margin-top: 25px;
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+	padding: 0px;
+	margin: 0px;
 }
 
-.secondNav {
-	width: 100%;
-	height: 60px;
-	border-top: 1px solid #000;
-	position: fixed;
-	bottom: 0px;
-	z-index: 100;
-	opacity: 0;
+.navBlock {
+	padding-top: 75px;
+}
+
+.nav {
+	padding-top: 20px;
+}
+
+.link a, .link a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.link, .navSeparator {
+	display: inline-block;
+	padding-right: 5px;
+}
+
+.contentRow1 {
+	background-image: url("../images/dust_scratches.png");
+}
+
+.contentRow2 {
+	background-color: lightgrey;
+}
+
+.container, .row {
+	min-width:100vw !important;
+	padding: 0px !important;
+	margin: 0px !important;
 }
 
 .topParallax {
@@ -73,32 +93,8 @@ img {
 	height: auto;
 }
 
-.navBlock {
-	padding-top: 75px;
-}
-
-.nav {
-	padding-top: 20px;
-}
-
-.link a, .link a:hover {
-	text-decoration: none;
-	color: black;
-}
-
-.link, .navSeparator {
-	display: inline-block;
-	padding-right: 5px;
-}
-
-.container, .row {
-	min-width:100vw !important;
-	padding: 0px !important;
-	margin: 0px !important;
-}
-
 .descr {
-	padding: 25px;
+	padding: 25px 25px 25px 0px;
 }
 
 .bar {
@@ -106,47 +102,39 @@ img {
 	background-color: black;
 }
 
-.seeMore {
-	text-align: center;
-}
-
-#contactRow p {
-	padding-top: 5%;
-}
-
-.contentRow1 {
-	background-image: url("../images/dust_scratches.png");
-}
-
-.contentRow2 {
-	background-color: lightgrey;
-}
-
 .contactBanner {
-	height: 20vh;
 	background-image: url("../images/tweed.png");
 }
 
-.contactBanner .titleHeader {
-	padding-top: 45px;
-	padding-bottom: 45px;
-	text-align: center;
+.titleHeader {
+	width: auto;
+	margin: auto;
 }
 
 .imgDiv {
-	text-align: center;
+	display: block;
+	height: 100%;
+	margin: auto;
 }
 
 .imgDiv img {
-	max-height: 65vh;
-	max-width: 40vw;
-	width: auto;
+	display: block;
+	max-width: 95%;
+	height: auto;
+	margin: auto;
 }
 
-#nsccDiv {
-	height: 45vh;
+#contactRow {
+	height: auto;
 }
 
-#nsccDiv img {
-	padding-top: 12%;
+#contactInfo {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.contactBanner h1 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
 }

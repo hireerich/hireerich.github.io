@@ -1,0 +1,35 @@
+@charset "utf8";
+
+/*
+	Website: Portfolio: Erich Gennette
+	Author: Erich Gennette
+	Date: November 26, 2018
+	Filename: workstyles.css
+*/
+
+.carousel-indicators {
+	margin-bottom: 0px;
+}
+
+.carousel, .carousel-inner, .carousel-item {
+	height: 100%;
+}
+
+#androidGif img {
+	height: 45vh;
+	width: auto;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	border-radius: 50px;
+}
+
+.contentRow1, .contentRow2 {
+	overflow: overlay;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
