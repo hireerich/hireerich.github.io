@@ -12,20 +12,26 @@ html {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/* Bootstrap Changes */
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Body Styles */
+
 body {
 	overflow-x: hidden;
 }
+
+/* Nav Styles */
 
 body > .block1 {
 	position: absolute;
 	top: 0;
 	height: 100vh;
 	min-width: 100%;
-}
-
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-	padding: 0px;
-	margin: 0px;
 }
 
 .navBlock {
@@ -45,6 +51,8 @@ body > .block1 {
 	display: inline-block;
 	padding-right: 5px;
 }
+
+/* Content Styles */
 
 .contentRow1 {
 	background-image: url("../images/dust_scratches.png");
@@ -137,4 +145,26 @@ body > .block1 {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
+}
+
+.imgDiv {
+	height: 40vh;
+	width: auto;
+	position: relative;
+}
+
+.imgDiv img {
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.titleHeader {
+	padding-bottom: 25px;
 }

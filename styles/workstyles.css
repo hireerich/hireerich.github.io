@@ -7,17 +7,15 @@
 	Filename: workstyles.css
 */
 
+
+/* Carousel Styles */
+
 .carousel-indicators {
 	margin-bottom: 0px;
 }
 
 .carousel, .carousel-inner, .carousel-item {
 	height: 100%;
-}
-
-#androidGif img {
-	height: 45vh;
-	width: auto;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -28,8 +26,20 @@
 	border-radius: 50px;
 }
 
+/* Content Styles */
+
 .contentRow1, .contentRow2 {
-	overflow: overlay;
+	height: 46vh;
 	padding-top: 25px;
 	padding-bottom: 25px;
+}
+
+.imgDiv img {
+	max-width: 95%;
+}
+
+/* Github Link Styles */
+
+.githubLink a:hover {
+	text-decoration: none;
 }
