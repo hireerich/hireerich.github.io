@@ -29,7 +29,7 @@
 /* Content Styles */
 
 .contentRow1, .contentRow2 {
-	height: 46vh;
+	min-height: 46vh;
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
