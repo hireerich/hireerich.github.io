@@ -127,19 +127,6 @@ body > .block1 {
 	margin: auto;
 }
 
-.imgDiv {
-	display: block;
-	height: 100%;
-	margin: auto;
-}
-
-.imgDiv img {
-	display: block;
-	max-width: 95%;
-	height: auto;
-	margin: auto;
-}
-
 #contactRow {
 	height: auto;
 }
