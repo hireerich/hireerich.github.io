@@ -16,3 +16,8 @@
 .imgDiv img {
 	max-width: 60%;
 }
+
+#contactRow {
+	min-height: 0vh;
+	overflow: overlay;
+}
