@@ -155,12 +155,16 @@ body > .block1 {
 }
 
 .imgDiv {
+	display: block;
+	margin: auto;
 	height: 40vh;
 	width: auto;
 	position: relative;
 }
 
 .imgDiv img {
+	display: block;
+	max-width: 95%;
 	max-height: 100%;
 	width: auto;
 	height: auto;
