@@ -38,6 +38,11 @@
 	max-width: 95%;
 }
 
+#contactRow {
+	min-height: 0vh;
+	overflow: overlay;
+}
+
 /* Github Link Styles */
 
 .githubLink a:hover {
