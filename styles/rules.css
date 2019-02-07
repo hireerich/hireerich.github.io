@@ -57,6 +57,10 @@ body > .block1 {
 	padding-right: 5px;
 }
 
+.link {
+	padding-bottom: 5px;
+}
+
 /* Content Styles */
 
 .contentRow1 {
@@ -133,6 +137,11 @@ body > .block1 {
 
 #contactInfo {
 	padding: 25px;
+}
+
+#contactInfo a:hover, #contactInfo a, .descr a:hover, .descr a {
+	text-decoration: none;
+	color: black;
 }
 
 .contactBanner h1 {

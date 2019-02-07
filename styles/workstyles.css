@@ -36,6 +36,7 @@
 
 .imgDiv img {
 	max-width: 95%;
+	border: 2px solid grey;
 }
 
 #contactRow {
